@@ -11,13 +11,19 @@
 ## Requirements
 
 - **NumPy**: Required for handling arrays and matrices.
-(conda env)$conda install numpy
+'''
+(conda_env)$conda install numpy
+'''
 
 - **RDKit**: A cheminformatics toolkit used for parsing SMILES strings and generating 2D molecular structures.
-(conda env)$conda install -c conda-forge rdkit
+'''
+(conda_env)$conda install -c conda-forge rdkit
+'''
 
 - **PuLP**: A linear programming library used for solving integer linear programming problems.
-(conda env)$pip install pulp
+'''
+(conda_env)$pip install pulp
+'''
 
 ## Usage
 
