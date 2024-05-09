@@ -2,7 +2,7 @@
 ### ecrire en petit
 normal 
 **gras** 
-- [] fait des cases
+- [ ] fait des cases
 - [x] fait des cases cochées
 
 *[hello](couou.fr)
