@@ -5,5 +5,5 @@ normal
 - [ ] fait des cases
 - [x] fait des cases cochées
 
-  *[hello](couou.fr)
+ * [hello](couou.fr)
  * [liste] de points 
