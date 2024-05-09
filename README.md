@@ -1,91 +1,22 @@
-# SUPER PROJET PROG
-### chemical equation equilibrer 
+# Chemical Equation Equilibrator
 
-programation projet with Fane Shala, John Stewart and Albéric Vigne 
+The Chemical Equation Equilibrator is a Python program that balances and equilibrates chemical equations based on reactants and products provided as SMILES (Simplified Molecular Input Line Entry System) strings.
 
-- [ ] Takes reactants and products as inpts 
-- [ ] Atom check
-- [ ] Stoechiometry calculation
-- [ ] Display the reaction
-- [ ] Calculate the standard free gibbs energy 
+## Features
 
-usefull links for better understanding: 
- * [hello](coucou.fr)
+- **SMILES Input**: Accepts reactants and products as SMILES strings, providing a convenient way to input molecular formulas.
+- **Chemical Equation Balancing**: Automatically balances chemical equations by solving an integer linear programming problem to find stoichiometric coefficients.
+- **Display Reaction**: Formats and displays the balanced chemical reaction in a human-readable format.
 
+## Requirements
 
-![Project Logo](projet-prog.png)
+- **NumPy**: Required for handling arrays and matrices.
+- **RDKit**: A cheminformatics toolkit used for parsing SMILES strings and generating 2D molecular structures.
+- **PuLP**: A linear programming library used for solving integer linear programming problems.
 
-![Coverage Status](https://raw.githubusercontent.com/pschwllr/minimal_project/main/assets/coverage-badge.svg)
+## Usage
 
-
-<br>
-
-
-Chemical equation balancer
-
-## Goal
-
-> Balance cehmical equation, gives a representation and the standard free gibbs energy (TODO show in a very small amount of space the **MOST** useful thing your package can do.)
-
-
-## 👩‍💻 Installation
-
-Create a new environment, you may also give the environment a different name. 
-
-```
-conda create -n ch200 python=3.10 
-```
-
-```
-conda activate ch200
-```
-
-If you need jupyter lab, install it 
-
-```
-(ch200) $ pip install jupyterlab
-```
-
-
-## 🛠️ Development installation
-
-Initialize Git (only for the first time). 
-
-Note: You should have create an empty repository on `https://github.com:johnstewartepfl/projet-prog'.
-
-```
-git init
-git add * 
-git add .*
-git commit -m "Initial commit" 
-git branch -M main
-git remote add origin git@github.com:pschwllr/ch200.git 
-git push -u origin main
-```
-
-Then add and commit changes as usual. 
-
-To install the package, run
-
-```
-(ch200) $ pip install -e ".[test,doc]"
-```
-
-### Run tests and coverage
-
-```
-(conda_env) $ pip install tox
-(conda_env) $ tox
-```
-
-### Generate coverage badge
-
-Works after running `tox`
-
-```
-(conda_env) $ pip install "genbadge[coverage]"
-(conda_env) $ genbadge coverage -i coverage.xml
-```
-
-
-
+1. Ensure you have the required dependencies installed: NumPy, RDKit, and PuLP.
+2. Run the Python script `chemical_equation_equilibrator.py`.
+3. Follow the prompts to input the number of reactants and products, as well as the SMILES strings for each.
+4. The program will automatically balance the chemical equation and display the balanced reaction.
