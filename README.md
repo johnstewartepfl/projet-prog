@@ -1,12 +1,13 @@
-# Chemical Equation Equilibrator
+# Chemical Equation Balencer
 
 *The Chemical Equation Equilibrator* is a Python program that balances and equilibrates chemical equations based on reactants and products provided as SMILES strings.
 
 ## Features
 
-- *SMILES Input*: Accepts reactants and products as SMILES strings, providing a convenient way to input molecular formulas.
+- *SMILES or name Input*: Accepts reactants and products as SMILES or chemical compound name strings. This provides a convenient way to input reactants and products.
 - *Chemical Equation Balancing*: Automatically balances chemical equations by solving an integer linear programming problem to find stoichiometric coefficients.
 - *Display Reaction*: Formats and displays the balanced chemical reaction in a human-readable format.
+- *Calculate standard free gibbs energy*: displays the satndard free gibbs energy of the balanced reaction.
 
 ## Requirements
 
@@ -26,6 +27,28 @@ pip install -c conda-forge rdkit
 
 ```
 pip install pulp
+```
+- *PIL*: Python Imaging Library used for image manipulation.
+
+```
+pip install pillow
+```
+
+- *rxnmapper*: A package for mapping reactions.
+
+```
+pip install rxnmapper
+```
+- *IPython*:Interactive computing in Python.
+
+```
+pip install ipython
+```
+
+- *request*:HTTP library for making requests.
+
+```
+pip install request 
 ```
 
 - *Rxn-INSIGHT* relies on NumPy, Pandas, RDKit, RDChiral, and RXNMapper.
@@ -62,10 +85,12 @@ tox -e docs
 
 ## Usage
 
-1. Ensure you have the required dependencies installed: NumPy, RDKit, and PuLP.
+1. Ensure you have the required dependencies installed: NumPy, RDKit, and PuLP, PIL, rxnmapper, IPython, request and Rxn-INSIGHT.
 2. Run the Python script chemical_equation_equilibrator.py.
-3. Follow the prompts to input the number of reactants and products, as well as the SMILES strings for each.
-4. The program will automatically balance the chemical equation and display the balanced reaction.
+3. Follow the prompts to input the number of reactants and products, as well as the SMILES or names strings for each.
+4. The program will automatically balance the chemical equation.
+5. It will display the balanced reaction.
+6. It will display the standard free gibbs energy.
 
 
 ##  Reference
