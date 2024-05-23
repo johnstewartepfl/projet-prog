@@ -51,7 +51,7 @@ pip install ipython
 pip install request 
 ```
 
-- *Rxn-INSIGHT* relies on NumPy, Pandas, RDKit, RDChiral, and RXNMapper.
+- *Rxn-INSIGHT* relies on NumPy, Pandas, RDKit, RDChiral, and RXNMapper. (c.f. references)
 
 A virtual environment can be installed with Anaconda as follows:
 
