@@ -1,79 +1,87 @@
-![Project Logo](assets/banner.png)
+# Chemical Equation Equilibrator
 
-![Coverage Status](assets/coverage-badge.svg)
+*The Chemical Equation Equilibrator* is a Python program that balances and equilibrates chemical equations based on reactants and products provided as SMILES strings.
 
-<h1 align="center">
-ChemBalancer
-</h1>
+## Features
 
-<br>
+- *SMILES Input*: Accepts reactants and products as SMILES strings, providing a convenient way to input molecular formulas.
+- *Chemical Equation Balancing*: Automatically balances chemical equations by solving an integer linear programming problem to find stoichiometric coefficients.
+- *Display Reaction*: Formats and displays the balanced chemical reaction in a human-readable format.
+
+## Requirements
+
+- *NumPy*: Required for handling arrays and matrices.
+
+pip install numpy
 
 
-Chemical equation Balancer
+- *RDKit*: A cheminformatics toolkit used for parsing SMILES strings and generating 2D molecular structures.
 
-## 🔥 Usage
+pip install -c conda-forge rdkit
 
-```python
-from mypackage import main_func
 
-# One line to rule them all
-result = main_func(data)
+- *PuLP*: A linear programming library used for solving integer linear programming problems.
+
+pip install pulp
+
+- *Rxn-INSIGHT* relies on NumPy, Pandas, RDKit, RDChiral, and RXNMapper.
+
+A virtual environment can be installed with Anaconda as follows:
+
+```console
+conda create -n rxn-insight python=3.10
+conda activate rxn-insight
 ```
 
-This usage example shows how to quickly leverage the package's main functionality with just one line of code (or a few lines of code). 
-After importing the `main_func` (to be renamed by you), you simply pass in your `data` and get the `result` (this is just an example, your package might have other inputs and outputs). 
-Short and sweet, but the real power lies in the detailed documentation.
-
-## 👩‍💻 Installation
-
-Create a new environment, you may also give the environment a different name. 
-
 ```
-conda create -n chembalancer python=3.10 
+git clone https://github.com/schwallergroup/Rxn-INSIGHT.git
+cd Rxn-INSIGHT
+pip install .
 ```
 
-```
-conda activate chembalancer
-(conda_env) $ pip install .
-```
-
-If you need jupyter lab, install it 
-
-```
-(chembalancer) $ pip install jupyterlab
+Or, for developing with the optional dependencies, which are required to run the tests
+and build the docs:
+``` 
+pip install -e ".[test,doc]"
 ```
 
-
-## 🛠️ Development installation
-
-Initialize Git (only for the first time). 
-
-Note: You should have create an empty repository on `https://github.com:faneshala/ChemBalancer`.
-
+All of the test environments can be run using the command `tox` from the top directory.
+Alternatively, individual test environments can be run using the `-e` flag as 
+in `tox -e env-name`. To run the tests, tests with coverage report, style checks, and
+docs build, respectively:
 ```
-git init
-git add * 
-git add .*
-git commit -m "Initial commit" 
-git branch -M main
-git remote add origin git@github.com:faneshala/ChemBalancer.git 
-git push -u origin main
+tox -e py3
+tox -e py3-coverage
+tox -e style
+tox -e docs
 ```
 
-Then add and commit changes as usual. 
+## Usage
 
-To install the package, run
+1. Ensure you have the required dependencies installed: NumPy, RDKit, and PuLP.
+2. Run the Python script chemical_equation_equilibrator.py.
+3. Follow the prompts to input the number of reactants and products, as well as the SMILES strings for each.
+4. The program will automatically balance the chemical equation and display the balanced reaction.
+
+
+##  Reference
+
+`M. R. Dobbelaere, I. Lengyel, C. V. Stevens, and K. M. Van Geem, 
+‘Rxn-INSIGHT: fast chemical reaction analysis using bond-electron matrices’, J. Cheminform., vol. 16, no. 1, Mar. 2024.`
 
 ```
-(chembalancer) $ pip install -e ".[test,doc]"
+@ARTICLE{Dobbelaere2024-es,
+  title     = "{Rxn-INSIGHT}: fast chemical reaction analysis using
+               bond-electron matrices",
+  author    = "Dobbelaere, Maarten R and Lengyel, Istv{\'a}n and Stevens,
+               Christian V and Van Geem, Kevin M",
+  journal   = "J. Cheminform.",
+  publisher = "Springer Science and Business Media LLC",
+  volume    =  16,
+  number    =  1,
+  month     =  mar,
+  year      =  2024,
+  copyright = "https://creativecommons.org/licenses/by/4.0",
+  language  = "en"
+}
 ```
-
-### Run tests and coverage
-
-```
-(conda_env) $ pip install tox
-(conda_env) $ tox
-```
-
-
-
