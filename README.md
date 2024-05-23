@@ -12,17 +12,21 @@
 
 - *NumPy*: Required for handling arrays and matrices.
 
+```
 pip install numpy
-
+```
 
 - *RDKit*: A cheminformatics toolkit used for parsing SMILES strings and generating 2D molecular structures.
 
+```
 pip install -c conda-forge rdkit
-
+```
 
 - *PuLP*: A linear programming library used for solving integer linear programming problems.
 
+```
 pip install pulp
+```
 
 - *Rxn-INSIGHT* relies on NumPy, Pandas, RDKit, RDChiral, and RXNMapper.
 
