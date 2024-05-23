@@ -1,0 +1,451 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5d054223-0ed3-4c1f-8692-14a3ff0f11f4",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3d1b4036-a62c-4c23-b747-de3a8995d8b6",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "568d2725-d64b-4fb2-8c6c-5a4a8b667541",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "444e68de-acf4-431b-85b4-4c9c8b7e0d56",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e39c2c17-1a1f-42f9-9eb0-7d25cd67b28e",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "4a20f4c4-7942-46d9-b09e-63ae66a7f87e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Number of reactants: 2\n",
+      "Number of products: 2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Reactant 1:\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Reactant: benzene\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Reactant 2:\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Reactant: dioxygene\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Product 1:\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Product: water\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Product 2:\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Product: carbon dioxyde\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Invalid SMILES format. Please enter a valid SMILES string.\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Product: O=C=O\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Invalid SMILES format. Please enter a valid SMILES string.\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Product: carbon dioxide\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Reactants: ['C1=CC=CC=C1', 'O=O']\n",
+      "Products: ['O', 'C(=O)=O']\n",
+      "\n",
+      " \n",
+      " stoechiometric reaction is C6H6 + 7 O2 → 2 H2O + 6 CO2\n",
+      "\n",
+      " \n",
+      " representation of the reaction:\n"
+     ]
+    },
+    {
+     "data": {
+      "image/svg+xml": [
+       "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:rdkit=\"http://www.rdkit.org/xml\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" baseProfile=\"full\" xml:space=\"preserve\" width=\"800px\" height=\"300px\" viewBox=\"0 0 800 300\">\n",
+       "<!-- END OF HEADER -->\n",
+       "<rect style=\"opacity:1.0;fill:#FFFFFF;stroke:none\" width=\"800.0\" height=\"300.0\" x=\"0.0\" y=\"0.0\"> </rect>\n",
+       "<path class=\"bond-0 atom-0 atom-1\" d=\"M 201.6,150.0 L 166.1,211.6\" style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path class=\"bond-0 atom-0 atom-1\" d=\"M 189.3,150.0 L 159.9,200.9\" style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path class=\"bond-1 atom-1 atom-2\" d=\"M 166.1,211.6 L 94.9,211.6\" style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path class=\"bond-2 atom-2 atom-3\" d=\"M 94.9,211.6 L 59.4,150.0\" style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path class=\"bond-2 atom-2 atom-3\" d=\"M 101.1,200.9 L 71.7,150.0\" style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path class=\"bond-3 atom-3 atom-4\" d=\"M 59.4,150.0 L 94.9,88.4\" style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path class=\"bond-4 atom-4 atom-5\" d=\"M 94.9,88.4 L 166.1,88.4\" style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path class=\"bond-4 atom-4 atom-5\" d=\"M 101.1,99.1 L 159.9,99.1\" style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path class=\"bond-5 atom-5 atom-0\" d=\"M 166.1,88.4 L 201.6,150.0\" style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path d=\"M 199.8,153.1 L 201.6,150.0 L 199.8,146.9\" style=\"fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;\"/>\n",
+       "<path d=\"M 167.8,208.5 L 166.1,211.6 L 162.5,211.6\" style=\"fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;\"/>\n",
+       "<path d=\"M 98.5,211.6 L 94.9,211.6 L 93.2,208.5\" style=\"fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;\"/>\n",
+       "<path d=\"M 61.2,153.1 L 59.4,150.0 L 61.2,146.9\" style=\"fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;\"/>\n",
+       "<path d=\"M 93.2,91.5 L 94.9,88.4 L 98.5,88.4\" style=\"fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;\"/>\n",
+       "<path d=\"M 162.5,88.4 L 166.1,88.4 L 167.8,91.5\" style=\"fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;\"/>\n",
+       "<path d=\"M 228.0,140.0 L 228.0,160.0\" style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path d=\"M 218.0,150.0 L 238.0,150.0\" style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path class=\"bond-6 atom-6 atom-7\" d=\"M 270.1,144.6 L 322.9,144.6\" style=\"fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path class=\"bond-6 atom-6 atom-7\" d=\"M 270.1,155.2 L 322.9,155.2\" style=\"fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path class=\"atom-0\" d=\"M 254.1 149.9 Q 254.1 146.3, 255.9 144.3 Q 257.6 142.3, 260.9 142.3 Q 264.3 142.3, 266.0 144.3 Q 267.8 146.3, 267.8 149.9 Q 267.8 153.6, 266.0 155.6 Q 264.2 157.7, 260.9 157.7 Q 257.7 157.7, 255.9 155.6 Q 254.1 153.6, 254.1 149.9 M 260.9 156.0 Q 263.2 156.0, 264.4 154.5 Q 265.7 152.9, 265.7 149.9 Q 265.7 147.0, 264.4 145.5 Q 263.2 144.0, 260.9 144.0 Q 258.7 144.0, 257.4 145.5 Q 256.2 147.0, 256.2 149.9 Q 256.2 152.9, 257.4 154.5 Q 258.7 156.0, 260.9 156.0 \" fill=\"#FF0000\"/>\n",
+       "<path class=\"atom-1\" d=\"M 325.2 149.9 Q 325.2 146.3, 327.0 144.3 Q 328.7 142.3, 332.1 142.3 Q 335.4 142.3, 337.1 144.3 Q 338.9 146.3, 338.9 149.9 Q 338.9 153.6, 337.1 155.6 Q 335.3 157.7, 332.1 157.7 Q 328.8 157.7, 327.0 155.6 Q 325.2 153.6, 325.2 149.9 M 332.1 156.0 Q 334.3 156.0, 335.6 154.5 Q 336.8 152.9, 336.8 149.9 Q 336.8 147.0, 335.6 145.5 Q 334.3 144.0, 332.1 144.0 Q 329.8 144.0, 328.5 145.5 Q 327.3 147.0, 327.3 149.9 Q 327.3 152.9, 328.5 154.5 Q 329.8 156.0, 332.1 156.0 \" fill=\"#FF0000\"/>\n",
+       "<path class=\"atom-0\" d=\"M 495.5 138.9 L 497.5 138.9 L 497.5 145.2 L 505.2 145.2 L 505.2 138.9 L 507.2 138.9 L 507.2 153.8 L 505.2 153.8 L 505.2 146.9 L 497.5 146.9 L 497.5 153.8 L 495.5 153.8 L 495.5 138.9 \" fill=\"#FF0000\"/>\n",
+       "<path class=\"atom-0\" d=\"M 510.2 153.3 Q 510.5 152.4, 511.4 151.8 Q 512.3 151.3, 513.5 151.3 Q 514.9 151.3, 515.8 152.1 Q 516.6 152.9, 516.6 154.4 Q 516.6 155.8, 515.5 157.2 Q 514.5 158.6, 512.2 160.2 L 516.8 160.2 L 516.8 161.3 L 510.1 161.3 L 510.1 160.3 Q 512.0 159.0, 513.1 158.1 Q 514.2 157.1, 514.7 156.2 Q 515.2 155.3, 515.2 154.4 Q 515.2 153.5, 514.8 153.0 Q 514.3 152.4, 513.5 152.4 Q 512.7 152.4, 512.1 152.7 Q 511.6 153.1, 511.2 153.8 L 510.2 153.3 \" fill=\"#FF0000\"/>\n",
+       "<path class=\"atom-0\" d=\"M 518.8 146.3 Q 518.8 142.7, 520.6 140.7 Q 522.3 138.7, 525.7 138.7 Q 529.0 138.7, 530.7 140.7 Q 532.5 142.7, 532.5 146.3 Q 532.5 149.9, 530.7 152.0 Q 528.9 154.0, 525.7 154.0 Q 522.4 154.0, 520.6 152.0 Q 518.8 150.0, 518.8 146.3 M 525.7 152.4 Q 527.9 152.4, 529.2 150.8 Q 530.4 149.3, 530.4 146.3 Q 530.4 143.4, 529.2 141.9 Q 527.9 140.4, 525.7 140.4 Q 523.4 140.4, 522.1 141.9 Q 520.9 143.4, 520.9 146.3 Q 520.9 149.3, 522.1 150.8 Q 523.4 152.4, 525.7 152.4 \" fill=\"#FF0000\"/>\n",
+       "<path d=\"M 559.0,140.0 L 559.0,160.0\" style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path d=\"M 549.0,150.0 L 569.0,150.0\" style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path class=\"bond-7 atom-9 atom-10\" d=\"M 671.1,144.6 L 698.0,144.6\" style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path class=\"bond-7 atom-9 atom-10\" d=\"M 698.0,144.6 L 724.9,144.6\" style=\"fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path class=\"bond-7 atom-9 atom-10\" d=\"M 671.1,155.2 L 698.0,155.2\" style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path class=\"bond-7 atom-9 atom-10\" d=\"M 698.0,155.2 L 724.9,155.2\" style=\"fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path class=\"bond-8 atom-9 atom-11\" d=\"M 654.9,155.2 L 628.0,155.2\" style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path class=\"bond-8 atom-9 atom-11\" d=\"M 628.0,155.2 L 601.1,155.2\" style=\"fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path class=\"bond-8 atom-9 atom-11\" d=\"M 654.9,144.6 L 628.0,144.6\" style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path class=\"bond-8 atom-9 atom-11\" d=\"M 628.0,144.6 L 601.1,144.6\" style=\"fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path class=\"atom-0\" d=\"M 657.2 149.9 Q 657.2 146.2, 659.0 144.3 Q 660.7 142.3, 664.0 142.3 Q 667.1 142.3, 668.8 144.5 L 667.4 145.6 Q 666.2 144.1, 664.0 144.1 Q 661.8 144.1, 660.6 145.6 Q 659.4 147.1, 659.4 149.9 Q 659.4 152.9, 660.6 154.4 Q 661.9 155.9, 664.3 155.9 Q 665.9 155.9, 667.8 154.9 L 668.4 156.5 Q 667.6 157.0, 666.5 157.3 Q 665.3 157.6, 664.0 157.6 Q 660.7 157.6, 659.0 155.6 Q 657.2 153.7, 657.2 149.9 \" fill=\"#000000\"/>\n",
+       "<path class=\"atom-1\" d=\"M 727.3 149.9 Q 727.3 146.3, 729.0 144.3 Q 730.8 142.3, 734.1 142.3 Q 737.4 142.3, 739.2 144.3 Q 741.0 146.3, 741.0 149.9 Q 741.0 153.6, 739.2 155.6 Q 737.4 157.7, 734.1 157.7 Q 730.8 157.7, 729.0 155.6 Q 727.3 153.6, 727.3 149.9 M 734.1 156.0 Q 736.4 156.0, 737.6 154.5 Q 738.9 152.9, 738.9 149.9 Q 738.9 147.0, 737.6 145.5 Q 736.4 144.0, 734.1 144.0 Q 731.8 144.0, 730.6 145.5 Q 729.4 147.0, 729.4 149.9 Q 729.4 152.9, 730.6 154.5 Q 731.8 156.0, 734.1 156.0 \" fill=\"#FF0000\"/>\n",
+       "<path class=\"atom-2\" d=\"M 585.0 149.9 Q 585.0 146.3, 586.8 144.3 Q 588.6 142.3, 591.9 142.3 Q 595.2 142.3, 597.0 144.3 Q 598.7 146.3, 598.7 149.9 Q 598.7 153.6, 596.9 155.6 Q 595.2 157.7, 591.9 157.7 Q 588.6 157.7, 586.8 155.6 Q 585.0 153.6, 585.0 149.9 M 591.9 156.0 Q 594.2 156.0, 595.4 154.5 Q 596.6 152.9, 596.6 149.9 Q 596.6 147.0, 595.4 145.5 Q 594.2 144.0, 591.9 144.0 Q 589.6 144.0, 588.4 145.5 Q 587.1 147.0, 587.1 149.9 Q 587.1 152.9, 588.4 154.5 Q 589.6 156.0, 591.9 156.0 \" fill=\"#FF0000\"/>\n",
+       "<path d=\"M 365.0,150.0 L 469.0,150.0\" style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path d=\"M 469.0,150.0 L 463.8,153.0\" style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "<path d=\"M 469.0,150.0 L 463.8,147.0\" style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"/>\n",
+       "</svg>"
+      ],
+      "text/plain": [
+       "<IPython.core.display.SVG object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "from rdkit import Chem\n",
+    "from rdkit.Chem import Draw\n",
+    "from rdkit.Chem import AllChem\n",
+    "from collections import defaultdict\n",
+    "import pulp\n",
+    "from PIL import Image\n",
+    "import io\n",
+    "import tempfile\n",
+    "import webbrowser\n",
+    "import pandas as pd\n",
+    "from rxnmapper import RXNMapper\n",
+    "from rxn_insight.reaction import Reaction\n",
+    "from rxn_insight.utils import draw_chemical_reaction, curate_smirks, get_similarity, get_fp\n",
+    "from IPython.display import SVG, display\n",
+    "import time\n",
+    "import requests\n",
+    "\n",
+    "def validate_nonzero_integer(input_value): #regarde si l'input est non nul \n",
+    "    try:\n",
+    "        value = int(input_value)\n",
+    "        if value != 0:\n",
+    "            return True\n",
+    "        else:\n",
+    "            return False\n",
+    "    except ValueError:\n",
+    "        return False\n",
+    "\n",
+    "def get_nonzero_integer(prompt, max_reactants=4): #regarde si c'est un int et qu'il est compris entre 1 & 4\n",
+    "    while True:\n",
+    "        input_value = input(prompt)\n",
+    "        if validate_nonzero_integer(input_value):\n",
+    "            number_of_reactants = int(input_value)\n",
+    "            if number_of_reactants <= max_reactants:\n",
+    "                return number_of_reactants\n",
+    "            else:\n",
+    "                print(f\"Number of reactants should not exceed {max_reactants}.\")\n",
+    "        else:\n",
+    "            print(\"Invalid input. Please enter a non-zero integer.\")\n",
+    "\n",
+    "n_reactants = get_nonzero_integer(\"Number of reactants:\")\n",
+    "n_products = get_nonzero_integer(\"Number of products:\")\n",
+    "\n",
+    "reactants = []\n",
+    "products = []\n",
+    "\n",
+    "def get_smiles_from_name(name):\n",
+    "    \"\"\"Fetch the SMILES string of a molecule by its common name from PubChem.\"\"\"\n",
+    "    url = f\"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/{name}/property/CanonicalSMILES/JSON\"\n",
+    "    response = requests.get(url)\n",
+    "    if response.status_code == 200:\n",
+    "        data = response.json()\n",
+    "        smiles = data['PropertyTable']['Properties'][0]['CanonicalSMILES']\n",
+    "        return smiles\n",
+    "    else:\n",
+    "        return \"No data found or error occurred.\"\n",
+    "\n",
+    "def is_valid_smiles(molecule):\n",
+    "    if Chem.MolFromSmiles(molecule) is None:\n",
+    "        return False\n",
+    "    else:\n",
+    "        return True\n",
+    "\n",
+    "def get_valid_smiles(prompt):\n",
+    "    while True:\n",
+    "        molecule = get_smiles_from_name(input(prompt))\n",
+    "        if is_valid_smiles(molecule):\n",
+    "            return molecule\n",
+    "        else:\n",
+    "            print(\"Invalid SMILES format. Please enter a valid SMILES string.\")\n",
+    "\n",
+    "reactants = []\n",
+    "for i in range(n_reactants):\n",
+    "    print(f\"Reactant {i+1}:\")\n",
+    "    reactant = get_valid_smiles(\"Reactant:\")\n",
+    "    if reactant:\n",
+    "        reactants.append(reactant)\n",
+    "\n",
+    "products = []\n",
+    "for i in range(n_products):\n",
+    "    print(f\"Product {i+1}:\")\n",
+    "    product = get_valid_smiles(\"Product:\")\n",
+    "    if product:\n",
+    "        products.append(product)\n",
+    "\n",
+    "print(\"Reactants:\", reactants)\n",
+    "print(\"Products:\", products)\n",
+    "\n",
+    "def count_atoms(smiles):\n",
+    "    \"\"\" Count atoms in a SMILES string. \"\"\"\n",
+    "    mol = Chem.MolFromSmiles(smiles)\n",
+    "    atom_counts = defaultdict(int)\n",
+    "    if mol:\n",
+    "        for atom in mol.GetAtoms():\n",
+    "            atom_counts[atom.GetSymbol()] += 1\n",
+    "    return dict(atom_counts)\n",
+    "\n",
+    "def setup_matrix(elements, compounds):\n",
+    "    \"\"\" Create a stoichiometry matrix for the elements and compounds. \"\"\"\n",
+    "    matrix = []\n",
+    "    for element in elements:\n",
+    "        row = [compound.get(element, 0) for compound in compounds]\n",
+    "        matrix.append(row)\n",
+    "    return np.array(matrix, dtype=int)\n",
+    "\n",
+    "def solve_ilp(A):\n",
+    "    \"\"\" Solve the integer linear programming problem to find stoichiometric coefficients. \"\"\"\n",
+    "    num_vars = A.shape[1]\n",
+    "    prob = pulp.LpProblem(\"Balancing_Chemical_Equation\", pulp.LpMinimize)\n",
+    "    x_vars = [pulp.LpVariable(f'x{i}', lowBound=1, cat='Integer') for i in range(num_vars)]\n",
+    "    prob += pulp.lpSum(x_vars)  # Minimize the sum of coefficients\n",
+    "    for i in range(A.shape[0]):\n",
+    "        prob += pulp.lpDot(A[i, :], x_vars) == 0, f\"Element_{i}_balance\"\n",
+    "    solver = pulp.PULP_CBC_CMD(msg=False)\n",
+    "    prob.solve(solver)\n",
+    "    if pulp.LpStatus[prob.status] == 'Optimal':\n",
+    "        return [int(pulp.value(var)) for var in x_vars]\n",
+    "    else:\n",
+    "        raise RuntimeError(\"Failed to find a valid solution.\")\n",
+    "\n",
+    "def get_molecular_formula(smiles):\n",
+    "    molecule = Chem.MolFromSmiles(smiles)\n",
+    "    if molecule is not None:\n",
+    "        return Chem.rdMolDescriptors.CalcMolFormula(molecule)\n",
+    "    else:\n",
+    "        return \"Invalid SMILES string\"\n",
+    "\n",
+    "def balance_chemical_equation(reactant_smiles, product_smiles):\n",
+    "    \"\"\" Balance a chemical equation given reactants and products as SMILES strings. \"\"\"\n",
+    "    reactant_counts = [count_atoms(smiles) for smiles in reactant_smiles]\n",
+    "    product_counts = [count_atoms(smiles) for smiles in product_smiles]\n",
+    "    \n",
+    "    reactant_elements = set(sum([list(counts.keys()) for counts in reactant_counts], []))\n",
+    "    product_elements = set(sum([list(counts.keys()) for counts in product_counts], []))\n",
+    "\n",
+    "    if reactant_elements != product_elements:\n",
+    "        missing_in_products = reactant_elements - product_elements\n",
+    "        missing_in_reactants = product_elements - reactant_elements\n",
+    "        error_message = \"Element mismatch found: \"\n",
+    "        if missing_in_products:\n",
+    "            error_message += f\"Elements {missing_in_products} are in reactants but not in products. \"\n",
+    "        if missing_in_reactants:\n",
+    "            error_message += f\"Elements {missing_in_reactants} are in products but not in reactants.\"\n",
+    "        raise ValueError(error_message)\n",
+    "\n",
+    "    elements = sorted(reactant_elements.union(product_elements))\n",
+    "    A_reactants = setup_matrix(elements, reactant_counts)\n",
+    "    A_products = setup_matrix(elements, product_counts)\n",
+    "    A = np.concatenate([A_reactants, -A_products], axis=1)\n",
+    "    \n",
+    "    integer_coefficients = solve_ilp(A)\n",
+    "    reactant_coeffs = integer_coefficients[:len(reactant_smiles)]\n",
+    "    product_coeffs = integer_coefficients[len(reactant_smiles):]\n",
+    "    \n",
+    "    reactant_data = [(coeff, get_molecular_formula(smiles)) for coeff, smiles in zip(reactant_coeffs, reactant_smiles)]\n",
+    "    product_data = [(coeff, get_molecular_formula(smiles)) for coeff, smiles in zip(product_coeffs, product_smiles)]\n",
+    "\n",
+    "    return reactant_data, product_data\n",
+    "\n",
+    "def display_reaction(reactants, products):\n",
+    "    \"\"\" Format and display the chemical reaction. \"\"\"\n",
+    "    def format_component(component):\n",
+    "        if len(component) != 2 or not isinstance(component[0], int) or not isinstance(component[1], str):\n",
+    "            raise ValueError(\"Each component must be a tuple of (coefficient, molecule), with a valid integer and string.\")\n",
+    "        coefficient, molecule = component\n",
+    "        return f\"{coefficient} {molecule}\" if coefficient != 1 else molecule\n",
+    "\n",
+    "    if not reactants or not products:\n",
+    "        raise ValueError(\"Both reactants and products need at least one component.\")\n",
+    "\n",
+    "    reactants_str = ' + '.join(format_component(r) for r in reactants)\n",
+    "    products_str = ' + '.join(format_component(p) for p in products)\n",
+    "    reaction = f\"{reactants_str} → {products_str}\"\n",
+    "    \n",
+    "    return reaction\n",
+    "\n",
+    "def create_reaction_string(reactants, products): #passes from 2 lists of smiles to a string of reaction for later display \n",
+    "    reactants_str = '.'.join(reactants)\n",
+    "    products_str = '.'.join(products)\n",
+    "    reaction = f\"{reactants_str}>>{products_str}\"\n",
+    "    return reaction\n",
+    "\n",
+    "try:\n",
+    "    reactant_data, product_data = balance_chemical_equation(reactants, products)\n",
+    "    reaction_string = display_reaction(reactant_data, product_data)\n",
+    "    reaction_str = create_reaction_string(reactants, products)\n",
+    "    print(\"\\n \\n\", \"stoechiometric reaction is\", reaction_string)\n",
+    "    print(\"\\n \\n\", \"representation of the reaction:\")\n",
+    "    display(SVG(draw_chemical_reaction(reaction_str)))\n",
+    "except ValueError as e:\n",
+    "    print(e)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fe6646a0-3ecd-46f6-bcf0-75c125342338",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7020d989-5a4b-4e0b-be09-d019de73b20d",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "58eac944-05f9-4168-bbc8-696927bbdf0b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.14"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

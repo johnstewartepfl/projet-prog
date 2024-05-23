@@ -9,7 +9,7 @@ ChemBalancer
 <br>
 
 
-Chemical equation Balancer
+chemical equation balancer
 
 ## 🔥 Usage
 
@@ -48,7 +48,7 @@ If you need jupyter lab, install it
 
 Initialize Git (only for the first time). 
 
-Note: You should have create an empty repository on `https://github.com:faneshala/ChemBalancer`.
+Note: You should have create an empty repository on `https://github.com:copier copy gh:schwallergroup/copier-liac-minimal projet-prog/ChemBalancer`.
 
 ```
 git init
@@ -56,7 +56,7 @@ git add *
 git add .*
 git commit -m "Initial commit" 
 git branch -M main
-git remote add origin git@github.com:faneshala/ChemBalancer.git 
+git remote add origin git@github.com:copier copy gh:schwallergroup/copier-liac-minimal projet-prog/ChemBalancer.git 
 git push -u origin main
 ```
 
